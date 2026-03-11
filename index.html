@@ -1,0 +1,104 @@
+<html>
+<head>
+    <title>Ficha de Inscrição</title>
+</head>
+<body bgcolor="#F4F4F4">
+
+    <br><br>
+
+    <form method="post" action="processar_cadastro">
+        <table border="1" align="center" width="750" cellpadding="10" cellspacing="0" bgcolor="#FFFFFF">
+            
+            <tr>
+                <td colspan="4" align="center">
+                    <h2>Ficha de Inscrição</h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td width="20%">Nome do candidato:</td>
+                <td colspan="3"><input type="text" name="nome" size="75"></td>
+            </tr>
+
+            <tr>
+                <td>Endereço:</td>
+                <td colspan="3"><input type="text" name="endereco" size="75"></td>
+            </tr>
+
+            <tr>
+                <td>CEP:</td>
+                <td colspan="3">
+                    <input type="text" name="cep" size="15">
+                    &nbsp;&nbsp;&nbsp;
+                    <select name="cidade">
+                        <option>-- Cidade --</option>
+                    </select>
+                    &nbsp;&nbsp;&nbsp;
+                    <select name="uf">
+                        <option>-- UF --</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Telefone:</td>
+                <td colspan="3">
+                    <input type="text" name="tel1" size="15">
+                    &nbsp;
+                    <input type="text" name="tel2" size="22">
+                    &nbsp;
+                    <input type="text" name="tel3" size="22">
+                </td>
+            </tr>
+
+            <tr>
+                <td>RG:</td>
+                <td width="25%">
+                    <input type="text" name="rg" size="15">
+                </td>
+                <td width="15%" align="right">CPF:&nbsp;</td>
+                <td width="40%">
+                    <input type="text" name="cpf" size="15">
+                    &nbsp;&nbsp;&nbsp;
+                    Sexo: 
+                    <input type="radio" name="sexo" value="Mas"> Mas.
+                    <input type="radio" name="sexo" value="Fem"> Fem.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Escolaridade:</td>
+                <td>
+                    <select name="escolaridade">
+                        <option>-- Selecione --</option>
+                    </select>
+                </td>
+                <td align="right">Email:&nbsp;</td>
+                <td>
+                    <input type="text" name="email" size="30">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Curso:</td>
+                <td>
+                    <select name="curso">
+                        <option>-- Selecione --</option>
+                    </select>
+                </td>
+                <td align="right">Senha de acompanhamento:&nbsp;</td>
+                <td>
+                    <input type="password" name="senha" size="15">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4" align="center">
+                    <br>
+                    <input type="submit" value="CADASTRAR">
+                    <br><br>
+                </td>
+            </tr>
+
+        </table>
+    </form>
